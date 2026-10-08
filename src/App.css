@@ -1,0 +1,84 @@
+body {
+  background: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 320px;
+  background: #22252d;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  padding: 20px;
+}
+
+form input {
+  width: 100%;
+  height: 70px;
+  background: #2a2d37;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 32px;
+  text-align: right;
+  padding-right: 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  padding: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  background: #292d36;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #3b404d;
+}
+
+
+.highlight {
+  background: #3c4252;
+  color: #2692ff;
+}
+
+.highlight:hover {
+  background: #4e5669;
+}
+
+#clear {
+  background: #eb5757;
+  color: #fff;
+  grid-column: span 1;
+}
+
+#clear:hover {
+  background: #ff6b6b;
+}
+
+#result {
+  background: #2692ff;
+  color: #fff;
+}
+
+#result:hover {
+  background: #4ba3ff;
+}
